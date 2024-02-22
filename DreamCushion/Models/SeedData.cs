@@ -36,7 +36,7 @@ public static class SeedData
                         Price = 39.99M,
                         Rating = 4.8M
                     }
-
+                    
             );
             context.SaveChanges();
         }
