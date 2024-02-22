@@ -35,8 +35,80 @@ public static class SeedData
                         Size = "Queen",
                         Price = 39.99M,
                         Rating = 4.8M
-                    }
-                    
+                    },
+                    new Pillow
+                    {
+                        Name = "CozyRest Memory Foam Pillow",
+                        Material = "Memory Foam",
+                        Size = "Standard",
+                        Price = 34.99M,
+                        Rating = 4.7M
+                    },
+    new Pillow
+    {
+        Name = "SoftTouch Microfiber Pillow",
+        Material = "Microfiber",
+        Size = "Standard",
+        Price = 19.99M,
+        Rating = 4.3M
+    },
+    new Pillow
+    {
+        Name = "EcoBliss Bamboo Pillow",
+        Material = "Bamboo",
+        Size = "King",
+        Price = 49.99M,
+        Rating = 4.9M
+    },
+    new Pillow
+    {
+        Name = "DreamFoam Gel Pillow",
+        Material = "Gel",
+        Size = "Queen",
+        Price = 29.99M,
+        Rating = 4.6M
+    },
+    new Pillow
+    {
+        Name = "PlushDreams Feather Pillow",
+        Material = "Feather",
+        Size = "King",
+        Price = 44.99M,
+        Rating = 4.8M
+    },
+    new Pillow
+    {
+        Name = "CloudComfort Cooling Pillow",
+        Material = "Gel-infused Memory Foam",
+        Size = "Standard",
+        Price = 49.99M,
+        Rating = 4.6M
+    },
+    new Pillow
+    {
+        Name = "SilkDreams Luxury Pillow",
+        Material = "Silk",
+        Size = "Queen",
+        Price = 59.99M,
+        Rating = 4.9M
+    },
+    new Pillow
+    {
+        Name = "AirFlow Breathable Pillow",
+        Material = "Polyester",
+        Size = "Standard",
+        Price = 24.99M,
+        Rating = 4.2M
+    },
+    new Pillow
+    {
+        Name = "OrthoSupport Orthopedic Pillow",
+        Material = "Memory Foam",
+        Size = "Queen",
+        Price = 39.99M,
+        Rating = 4.7M
+    }
+
             );
             context.SaveChanges();
         }
