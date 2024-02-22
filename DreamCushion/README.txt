@@ -1,7 +1,4 @@
 ﻿Group Name:- Kappa
-Group Members:- Sharu Joseph John - 0847821
-		Shruti Nath - 0850628
-		Bhagyesh Patel - 0847843
 Product:- Pillow
 Course:- Web Application Security
 Instructor:- Mr. Andrew Steele
