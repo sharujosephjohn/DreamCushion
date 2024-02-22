@@ -1,6 +1,11 @@
 ﻿Group Name:- Kappa
+Group Members:- Sharu Joseph John
+		Shruti Nath
+		Bhagyesh Patel
+Company Name:- Dreams Cushion
 Product:- Pillow
 Course:- Web Application Security
+Instructor:- Mr. Andrew Steele
 
 ******************************************************************************************************************************************************************
 Date:- 2024-02-20
