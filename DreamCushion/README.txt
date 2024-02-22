@@ -1,14 +1,10 @@
 ﻿Group Name:- Kappa
-Group Members:- Sharu Joseph John - 0847821
-		Shruti Nath - 0850628
-		Bhagyesh Patel - 0847843
 Product:- Pillow
 Course:- Web Application Security
-Instructor:- Mr. Andrew Steele
 
 ******************************************************************************************************************************************************************
-Date:- 2024-02-21
-Time:- 1205
+Date:- 2024-02-20
+Time:- 1700
 Introduction:
 
 Our team consists of three members, with Sharu Joseph John leading the group. Together, we successfully completed a project that involved creating a Pillow App. The journey from brainstorming the company name to setting up the project on GitHub was a collaborative effort.
@@ -19,8 +15,8 @@ Brainstormed and finalized the company name for the project.
 Conducted thorough research on various types of pillows to gather valuable information.
 
 ******************************************************************************************************************************************************************
-Date:- 2024-02-21
-Time:- 1205
+Date:- 2024-02-20
+Time:- 1730
 
 Visual Studio Setup and MVC Project Creation:
 
@@ -29,8 +25,8 @@ Created an MVC (model-view-controller) project seamlessly, aligning with the cou
 Smooth progress in this step with no significant challenges.
 
 ******************************************************************************************************************************************************************
-Date:- 2024-02-22
-Time:- 1415
+Date:- 2024-02-21
+Time:- 0900
 
 Controller Configuration:
 
@@ -50,8 +46,8 @@ Adjusted title, footer, and menu link for a personalized display in the browser 
 Modified _viewstart.cshtml and index.cshtml to enhance the overall user experience.
 
 ******************************************************************************************************************************************************************
-Date:- 2024-02-22
-Time:- 1415
+Date:- 2024-02-21
+Time:- 1000
 
 Welcome Page Creation:
 
@@ -64,8 +60,8 @@ Introduced a Pillow.cs class in the models folder, including an ID field for pri
 Successfully scaffolded a new object in the controllers folder.
 
 ******************************************************************************************************************************************************************
-Date:- 2024-02-22
-Time:- 1420
+Date:- 2024-02-21
+Time:- 1030
 
 Migration File Creation:
 
@@ -80,8 +76,8 @@ Developed a SeedData class in the Models folder, adding error-free code to the p
 Overcame initial mistakes to successfully integrate database functionality into the project.
 
 ******************************************************************************************************************************************************************
-Date:- 2024-02-22
-Time:- 1430
+Date:- 2024-02-21
+Time:- 1100
 
 Image Addition to the Welcome Page:
 
