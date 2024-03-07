@@ -84,15 +84,7 @@ public static class SeedData
         Price = 49.99M,
         Rating = 4.6M
     },
-    new Pillow
-    {
-        Name = "SilkDreams Luxury Pillow",
-        Material = "Silk",
-        Size = "Queen",
-        Price = 59.99M,
-        Rating = 4.9M
-    },
-    new Pillow
+        new Pillow
     {
         Name = "AirFlow Breathable Pillow",
         Material = "Polyester",
@@ -100,6 +92,14 @@ public static class SeedData
         Price = 24.99M,
         Rating = 4.2M
     },
+     new Pillow
+     {
+         Name = "SilkDreams Luxury Pillow",
+         Material = "Silk",
+         Size = "Queen",
+         Price = 59.99M,
+         Rating = 4.9M
+     },
     new Pillow
     {
         Name = "OrthoSupport Orthopedic Pillow",
