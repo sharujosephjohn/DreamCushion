@@ -97,10 +97,29 @@ GitHub Repository and Code Update:
 Established a GitHub repository for the project, ensuring version control and collaboration.
 Updated the website with controller methods and views, incorporating the latest project changes.
 Modified the Pillow.cs file in the Models folder to specify field names and handle data type errors.
-In conclusion, our team's journey through the project involved meticulous planning, collaborative problem-solving, and a commitment to learning. Each step contributed to the overall success of the Pillow App, demonstrating our ability to overcome challenges and deliver a polished final product.
+In conclusion, our team's journey through the project involved meticulous planning, collaborative problem-solving, and a commitment to learning. 
+Each step contributed to the overall success of the Pillow App, demonstrating our ability to overcome challenges and deliver a polished final product.
+
+******************************************************************************************************************************************************************
+Date:- 2024-03-05
+Time:- 1430
+
+Added a AccessController.cs file in the controllers folder for the authentication.
+Added the class controller for the index and home.
+Added the Login Model inside the accesscontroller page with user email and password.
+
+******************************************************************************************************************************************************************
+Date:- 2024-03-05
+Time:- 1450
+
+Updated the database and try to login into the webpage by using the username and password.
+After that successsfully logged in into the user by using the credentials.
+
+
 
 Contributions
 
-Sharu Joseph John - 
+Sharu Joseph John 
 Shruti Nath
 Bhagyesh Patel
+MandeepKaur 
