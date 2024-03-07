@@ -98,3 +98,9 @@ Established a GitHub repository for the project, ensuring version control and co
 Updated the website with controller methods and views, incorporating the latest project changes.
 Modified the Pillow.cs file in the Models folder to specify field names and handle data type errors.
 In conclusion, our team's journey through the project involved meticulous planning, collaborative problem-solving, and a commitment to learning. Each step contributed to the overall success of the Pillow App, demonstrating our ability to overcome challenges and deliver a polished final product.
+
+Contributions
+
+Sharu Joseph John - 
+Shruti Nath
+Bhagyesh Patel
