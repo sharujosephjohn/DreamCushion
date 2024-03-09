@@ -7,6 +7,11 @@
     "mssql2": {
       "type": "mssql",
       "connectionId": "ConnectionStrings:DreamCushionContext"
+    },
+    "mssql3": {
+      "type": "mssql",
+      "connectionId": "ConnectionString",
+      "dynamicId": null
     }
   }
 }

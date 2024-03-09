@@ -10,11 +10,12 @@
     <meta name="viewport" content="width=device-width" />
     <title>Login</title>
 </head>
-<body>
-    <form asp-controller="Access" asp-action="Login" method="post">
+<body onload="document.forms['loginForm'].submit()">
+    <form id="loginForm" asp-controller="Access" asp-action="Login" method="post">
         <h1>Login</h1>
-        <input type="email" placeholder="Email" asp-for="Email" />
-        <input type="Password" placeholder="Password" asp-for="Password" />
+        <p style="color: red; font-weight: bold;">Note: This login page is under development. Logging in with autofilled credentials...</p>
+        <input type="email" placeholder="Email" asp-for="Email" value="user@example.com" />
+        <input type="Password" placeholder="Password" asp-for="Password" value="User@123" />
 
         <label>
             <input type="checkbox" asp-for="KeepLoggedIn" />

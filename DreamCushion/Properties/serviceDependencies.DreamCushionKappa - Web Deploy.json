@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "mssql3": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/DreamCushionKappa/providers/Microsoft.ServiceLinker/linkers/ConnectionString_9F5119D2AF",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/dreamcushiondbserverkappa/databases/DreamCushion_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionString"
+    }
+  }
+}

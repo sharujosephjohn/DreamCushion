@@ -7,6 +7,14 @@
     "mssql2": {
       "type": "mssql.local",
       "connectionId": "ConnectionStrings:DreamCushionContext"
+    },
+    "mssql3": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus/connectors/ConnectionString_9F5119D2AF",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/dreamcushiondbserverkappa/databases/DreamCushion_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionString",
+      "dynamicId": null
     }
   }
 }
