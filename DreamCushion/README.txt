@@ -18,7 +18,12 @@ Project Initialization:
 
 Brainstormed and finalized the company name for the project.
 Conducted thorough research on various types of pillows to gather valuable information.
-
+With Fields decided
+Name
+Material
+Size
+Price
+Rating
 ******************************************************************************************************************************************************************
 Date:- 2024-02-20
 Time:- 1730
@@ -122,6 +127,32 @@ Time:- 2030
 Deployed Sucessfully with Database.
 Link - dreamcushionkappa.azurewebsites.net
 
+******************************************************************************************************************************************************************
+Date:- 2024-03-15
+Time:- 1030
+
+Deployed test version by Bhagyesh
+Test (TEST) With Auto Authentication & Authorization, Version 2.0
+Link:- https://dreamcushionkappa1.azurewebsites.net/
+
+******************************************************************************************************************************************************************
+Date:- 2024-03-15
+Time:- 1300
+
+Deployed production version by Sharu
+With help from Shruti & MandeepKaur completed Authentication & Authorization, Version 3.0
+
+Production (PRODUCTION) With Authentication & Authorization
+Link:- https://dreamcushionkappa.azurewebsites.net/
+
+Admin Credentials
+admin@dreamscushion.com
+Admin@7821
+
+User Credentials
+user@dreamscushion.com
+User@7821
+
 
 
 Contributions
@@ -129,4 +160,4 @@ Contributions
 Sharu Joseph John 
 Shruti Nath
 Bhagyesh Patel
-MandeepKaur 
+MandeepKaur
