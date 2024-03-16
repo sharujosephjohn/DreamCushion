@@ -8,12 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using DreamCushion.Data;
 using DreamCushion.Models;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication;
 
 namespace DreamCushion.Controllers
 {
-    [Authorize]
     public class PillowsController : Controller
     {
         private readonly DreamCushionContext _context;
@@ -24,6 +21,7 @@ namespace DreamCushion.Controllers
         }
 
         // GET: Pillows
+        [Authorize]
         public async Task<IActionResult> Index(string pillowMaterial, string searchString)
         {
             if (_context.Pillow == null)
@@ -46,7 +44,7 @@ namespace DreamCushion.Controllers
 
             if (!String.IsNullOrEmpty(pillowMaterial))
             {
-                pillow = pillow.Where(x => x.Material ==pillowMaterial);
+                pillow = pillow.Where(x => x.Material == pillowMaterial);
             }
 
             var pillowMaterialVM = new PillowMaterialViewModel
@@ -59,6 +57,7 @@ namespace DreamCushion.Controllers
         }
 
         // GET: Pillows/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -77,6 +76,7 @@ namespace DreamCushion.Controllers
         }
 
         // GET: Pillows/Create
+        [Authorize(Roles = "Administrator")]
         public IActionResult Create()
         {
             return View();
@@ -87,6 +87,7 @@ namespace DreamCushion.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Create([Bind("Id,Name,Material,Size,Price,Rating")] Pillow pillow)
         {
             if (ModelState.IsValid)
@@ -99,6 +100,7 @@ namespace DreamCushion.Controllers
         }
 
         // GET: Pillows/Edit/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -119,6 +121,7 @@ namespace DreamCushion.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Material,Size,Price,Rating")] Pillow pillow)
         {
             if (id != pillow.Id)
@@ -150,6 +153,7 @@ namespace DreamCushion.Controllers
         }
 
         // GET: Pillows/Delete/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -170,6 +174,7 @@ namespace DreamCushion.Controllers
         // POST: Pillows/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var pillow = await _context.Pillow.FindAsync(id);
@@ -180,12 +185,6 @@ namespace DreamCushion.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        public async Task<IActionResult> LogOut()
-        {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Login", "Access");
         }
 
         private bool PillowExists(int id)

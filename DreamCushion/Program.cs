@@ -2,9 +2,7 @@
 using DreamCushion.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DreamCushionContext>(options =>
@@ -17,16 +15,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddAuthentication(
-    CookieAuthenticationDefaults.AuthenticationScheme).
-    AddCookie(option =>
-    {
-        option.LoginPath = "/Access/Login";
-        option.ExpireTimeSpan = TimeSpan.FromMinutes(20);
-    });
 
 var app = builder.Build();
 
@@ -54,13 +45,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Access}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
 app.Run();
