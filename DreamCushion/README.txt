@@ -145,16 +145,6 @@ With help from Shruti & MandeepKaur completed Authentication & Authorization, Ve
 Production (PRODUCTION) With Authentication & Authorization
 Link:- https://dreamcushionkappa.azurewebsites.net/
 
-Admin Credentials
-admin@dreamscushion.com
-Admin@7821
-
-User Credentials
-user@dreamscushion.com
-User@7821
-
-
-
 Contributions
 
 Sharu Joseph John 
